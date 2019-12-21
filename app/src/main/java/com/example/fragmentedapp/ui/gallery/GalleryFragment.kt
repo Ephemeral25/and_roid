@@ -16,10 +16,12 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import kotlinx.android.synthetic.main.fragment_gallery.*
 
 class GalleryFragment : Fragment(), OnMapReadyCallback {
 
     private lateinit var galleryViewModel: GalleryViewModel
+    private lateinit var mMap: GoogleMap
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -33,10 +35,12 @@ class GalleryFragment : Fragment(), OnMapReadyCallback {
         galleryViewModel.text.observe(this, Observer {
             textView.text = it
         })*/
+        val mapFragment = childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
+        mapFragment.getMapAsync(this)
         return root
     }
 
-    private lateinit var mMap: GoogleMap
+
 
         /**
          * Manipulates the map once available.
@@ -51,9 +55,9 @@ class GalleryFragment : Fragment(), OnMapReadyCallback {
             mMap = googleMap
 
             // Add a marker in Sydney and move the camera
-            val sydney = LatLng(-34.0, 151.0)
-            mMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
-            mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
+            val crousti = LatLng(48.862725, 2.287592)
+            mMap.addMarker(MarkerOptions().position(crousti).title("Marker in Crousti"))
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(crousti))
         }
 
 
