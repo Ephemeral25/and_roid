@@ -39,14 +39,9 @@ class GalleryFragment : Fragment(), OnMapReadyCallback {
         mapFragment.getMapAsync(this)
         return root
     }
-
-
-
         /**
          * Manipulates the map once available.
          * This callback is triggered when the map is ready to be used.
-         * This is where we can add markers or lines, add listeners or move the camera. In this case,
-         * we just add a marker near Sydney, Australia.
          * If Google Play services is not installed on the device, the user will be prompted to install
          * it inside the SupportMapFragment. This method will only be triggered once the user has
          * installed Google Play services and returned to the app.
@@ -56,7 +51,7 @@ class GalleryFragment : Fragment(), OnMapReadyCallback {
 
             // Add a marker in Sydney and move the camera
             val crousti = LatLng(48.862725, 2.287592)
-            mMap.addMarker(MarkerOptions().position(crousti).title("Marker in Crousti"))
+            mMap.addMarker(MarkerOptions().position(crousti).title("Crousti Restaurent"))
             mMap.moveCamera(CameraUpdateFactory.newLatLng(crousti))
         }
 
