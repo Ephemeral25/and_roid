@@ -14,6 +14,6 @@
     <string name="menu_home_button_add_food">Add Item</string>
 
     <string name="menu_gallery">Crousti Locations</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_slideshow">Météo</string>
     <string name="title_activity_maps">CroustiPoulet Locations</string>
 </resources>
