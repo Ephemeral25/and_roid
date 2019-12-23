@@ -8,6 +8,11 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
+    <string name="menu_home_restaurant_descriptor">Image of the restaurant</string>
+    <string name="menu_home_restaurant_title">CroustiPoulet</string>
+    <string name="menu_home_restaurant_edit_food">type your envy</string>
+    <string name="menu_home_button_add_food">Add Item</string>
+
     <string name="menu_gallery">Crousti Locations</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="title_activity_maps">CroustiPoulet Locations</string>
